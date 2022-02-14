@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import UIKit
+
 
 @main
 struct sgtApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+//            homeScreen()
+//            HomeView()
+            LoginView(primaryColor: .systemBlue, secondaryColor: .systemOrange)
+            
+            
         }
     }
 }
